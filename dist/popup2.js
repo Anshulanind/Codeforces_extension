@@ -1,13 +1,13 @@
 
 window.onload = function() {
   const firebaseConfig = {
-    apiKey: "AIzaSyDU1Mg5b8V_elg73drZa8JxhWLse6eWQA0",
-    authDomain: "newproject-5f51d.firebaseapp.com",
-    projectId: "newproject-5f51d",
-    storageBucket: "newproject-5f51d.firebasestorage.app",
-    messagingSenderId: "215492769141",
-    appId: "1:215492769141:web:4e83ae875a172ac50bcf3c",
-    measurementId: "G-VBX6GRF12K"
+    apiKey: "AIzaSyDWrpv9hYPMgI4qyZR5RDcL01Ijcu9HCuo",
+    authDomain: "codeforces-extension-5ff85.firebaseapp.com",
+    projectId: "codeforces-extension-5ff85",
+    storageBucket: "codeforces-extension-5ff85.firebasestorage.app",
+    messagingSenderId: "26786845982",
+    appId: "1:26786845982:web:1e2c9c11cf4cce56b2650f",
+    measurementId: "G-H2C2P4TEXP"
   };
 
   firebase.initializeApp(firebaseConfig);
