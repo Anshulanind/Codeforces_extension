@@ -64,7 +64,7 @@ window.onload = function() {
       var join_input = document.createElement('input');
       join_input.setAttribute('id', 'join_input');
       join_input.setAttribute('maxlength', 15);
-      join_input.placeholder = 'No.... It\'s Patrick Star';
+      join_input.placeholder = 'Enter Name';
       
       join_input.onkeyup = function() {
         
@@ -144,7 +144,7 @@ window.onload = function() {
       
       chat_input.setAttribute('maxlength', 1000);
       
-      chat_input.placeholder = `${parent.get_name()}. Say something...`;
+      chat_input.placeholder = `${parent.get_name()}. Say something`;
       chat_input.onkeyup = function() {
         if (chat_input.value.length > 0) {
           chat_input_send.removeAttribute('disabled');
