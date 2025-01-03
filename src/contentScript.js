@@ -61,7 +61,7 @@ import { app } from './index.js';
 
         const database = getDatabase(app);
         const timerRef = ref(database, 'rooms/' + roomCode + '/timer');
-        const endTime = new Date().getTime() + 20 * 60 * 1000; // 20 minutes from now
+        const endTime = new Date().getTime() + 20 * 60 * 1000; 
 
         set(timerRef, { endTime }).then(() => {
             console.log('Timer set successfully');
@@ -85,7 +85,7 @@ import { app } from './index.js';
         onValue(participantsRef, (snapshot) => {
             snapshot.forEach((childSnapshot) => {
                 const participant = childSnapshot.val();
-                // Logic to notify participants about the new problem
+                
                 console.log(`Notifying participant ${participant.username} about the new problem: ${problemUrl}`);
             });
         });
