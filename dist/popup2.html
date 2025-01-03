@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="popup2.css" rel="stylesheet" type="text/css" />
+  <title>Create User</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Create User</h1>
+    <form id="createUserForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="roomCode">Room Code:</label>
+      <input type="text" id="roomCode" name="roomCode" required>
+      <button type="submit">Create</button>
+    </form>
+    <div id="urls"></div>
+  </div>
+  <script src="bundle.js" type="module"></script>
+  <script src="popup2.js" type="module"></script>
+</body>
+</html>
