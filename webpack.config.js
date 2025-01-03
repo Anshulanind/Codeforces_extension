@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    mode: 'development', // Set the mode to 'development' or 'production'
+    mode: 'development',
     entry: {
         contentScript: './src/contentScript.js',
         background: './src/background.js',
@@ -12,7 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
-    devtool: false, // Disable source maps to avoid using eval
+    devtool: false, 
     module: {
         rules: [
             {
