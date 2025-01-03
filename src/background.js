@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         } else {
             console.error('chrome.tabs is undefined');
         }
-        return true; // Indicates that the response will be sent asynchronously
+        return true; 
     } else if (message.action === "shareProblem") {
         const database = getDatabase(app);
         const roomRef = ref(database, 'rooms/' + message.roomCode + '/problems');
